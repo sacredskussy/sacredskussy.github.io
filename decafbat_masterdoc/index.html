@@ -1,89 +1,84 @@
 <!DOCTYPE html>
 <meta>
-<title>Masterdoc</title>
+  <title>Masterdoc</title>
 </meta>
 <html>
-<header>
-  <script src=
-  "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  <header>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script src=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js">
+        </script>
+        <link rel="stylesheet" href=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            type="text/css" href=
+    "https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script type="text/javascript">
+          function showHideRow(row) {
+              $("#" + row).toggle();
+          }
       </script>
-      <script src=
-  "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js">
-      </script>
-      <link rel="stylesheet" href=
-  "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
-      <link rel="stylesheet"
-          type="text/css" href=
-  "https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <script type="text/javascript">
-        function showHideRow(row) {
-            $("#" + row).toggle();
+      <style>
+        #table_detail .hidden_row {
+          display: none;
         }
-    </script>
-    <style>
-      #table_detail .hidden_row {
-            display: none;
-            }
-     #wrapper{
+        #wrapper{
+         align: center;
+         margin-left: 0;
+         padding-top: 64px;
+         width: 100%;
+       }
+       #table_detail{
+         width: 40%;
+         margin: auto;
+       }
+       #hidden_table0{
+         width: 40%;
+         margin: auto;
 
-       align: center;
-       margin-left: 0;
-       padding-top: 64px;
-       width: 100%;
-     }
-     #table_detail{
-       width: 40%;
-       margin: auto;
-     }
-     #hidden_table0{
-       width: 40%;
-       margin: auto;
+       }
+       #hidden_table0 .hidden_row{
 
-     }
-     #hidden_table0 .hidden_row{
+         display: none;
+       }
+       tr {
+         cursor: pointer;
 
-       display: none;
-     }
-     tr {
-       cursor: pointer;
+       }
 
-     }
-
-    </style>
-</header>
-
-<body>
-<div id="wrapper">
-<table id="table_detail" border = 1 cellpadding = 8>
-<tr onclick="showHideRow('hidden_table0');" class="mouse">
-  <th>Episode Ideas</th>
-</tr>
-<table class="hidden_row" id="hidden_table0" border = 1 cellpadding = 8>
-<tr onclick="showHideRow('hidden_row1');" >
-                <td>-Two bats battle in the form of an imaginary scrabble game.</td>
-            </tr>
-            <tr id="hidden_row1" class="hidden_row">
-              <td colspan=1>
-                -Some shitty board game club consumes the entire school and they do serious anime battles with generic board games **SCRABBLE**
-They start playing scrabble without the board eventually, keeping track of the score and their available letters in their heads or yelling out “23 POINTS” or whatever after saying a large word that intersects with the letters of another word (think about how refreshing their available letters would work without the bag of letters)
-THE LETTERS THEY SEE ON SIGNS AND BOOKS OR WHATEVER ARE THEIR AVAILABLE LETTERS
-              </td>
-            </tr>
-
-            <tr onclick="showHideRow('hidden_row2');" class="hidden_row" id="hidden_row0">
-                            <td>-Two bats battle in the form of an imaginary scrabble game.</td>
-                        </tr>
-                        <tr id="hidden_row2" class="hidden_row">
-                          <td colspan=1>
-                            -Some shitty board game club consumes the entire school and they do serious anime battles with generic board games **SCRABBLE**
-            They start playing scrabble without the board eventually, keeping track of the score and their available letters in their heads or yelling out “23 POINTS” or whatever after saying a large word that intersects with the letters of another word (think about how refreshing their available letters would work without the bag of letters)
-            THE LETTERS THEY SEE ON SIGNS AND BOOKS OR WHATEVER ARE THEIR AVAILABLE LETTERS
-                          </td>
-                        </tr>
-</table>
-</table>
-</div>
-</body>
-
-
+      </style>
+  </header>
+  <body>
+    <div id="wrapper">
+      <table id="table_detail" border = 1 cellpadding = 8>
+        <tr onclick="showHideRow('hidden_table0');" class="mouse">
+          <th>Episode Ideas</th>
+        </tr>
+        <table class="hidden_row" id="hidden_table0" border = 1 cellpadding = 8>
+          <tr onclick="showHideRow('hidden_row1');" >
+            <td>-Two bats battle in the form of an imaginary scrabble game.</td>
+          </tr>
+          <tr id="hidden_row1" class="hidden_row">
+            <td colspan=1>
+                  Some shitty board game club consumes the entire school and they do serious anime battles with generic board games **SCRABBLE**
+                  They start playing scrabble without the board eventually, keeping track of the score and their available letters in their heads or yelling out “23 POINTS” or whatever after saying a large word that intersects with the letters of another word (think about how refreshing their available letters would work without the bag of letters)
+                  THE LETTERS THEY SEE ON SIGNS AND BOOKS OR WHATEVER ARE THEIR AVAILABLE LETTERS
+            </td>
+          </tr>
+          <tr onclick="showHideRow('hidden_row2');" class="hidden_row" id="hidden_row0">
+            <td>-Two bats battle in the form of an imaginary scrabble game.</td>
+          </tr>
+          <tr id="hidden_row2" class="hidden_row">
+            <td colspan=1>
+                  Some shitty board game club consumes the entire school and they do serious anime battles with generic board games **SCRABBLE**
+                  They start playing scrabble without the board eventually, keeping track of the score and their available letters in their heads or yelling out “23 POINTS” or whatever after saying a large word that intersects with the letters of another word (think about how refreshing their available letters would work without the bag of letters)
+                  THE LETTERS THEY SEE ON SIGNS AND BOOKS OR WHATEVER ARE THEIR AVAILABLE LETTERS
+            </td>
+          </tr>
+        </table>
+      </table>
+    </div>
+  </body>
 </html>
