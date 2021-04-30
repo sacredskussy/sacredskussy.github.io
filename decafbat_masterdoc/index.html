@@ -37,15 +37,11 @@
        #hidden_table0{
          width: 40%;
          margin: auto;
-
+         display:none
        }
-       #hidden_table0 .hidden_row{
 
-         display: none;
-       }
        tr {
          cursor: pointer;
-
        }
 
       </style>
@@ -56,7 +52,7 @@
         <tr onclick="showHideRow('hidden_table0');" class="mouse">
           <th>Episode Ideas</th>
         </tr>
-        <table class="hidden_row" id="hidden_table0" border = 1 cellpadding = 8>
+        <table class="hidden_table" id="hidden_table0" border = 1 cellpadding = 8>
           <tr onclick="showHideRow('hidden_row1');" >
             <td>-Two bats battle in the form of an imaginary scrabble game.</td>
           </tr>
